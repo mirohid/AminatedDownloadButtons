@@ -215,10 +215,10 @@ struct AnimatedNavigationButton<Destination: View>: View {
                         .offset(x: shimmer ? 150 : -150)
                         .animation(.linear(duration: 1).repeatForever(autoreverses: false), value: shimmer)
                 )
-                .onAppear {
-                    shimmer = true
-                }
-                .animation(.easeOut(duration: 0.2), value: isPressed)
+//                .onAppear {
+//                    shimmer = true
+//                }
+//                .animation(.easeOut(duration: 0.2), value: isPressed)
         }
         .simultaneousGesture(
             LongPressGesture(minimumDuration: 0.1)
